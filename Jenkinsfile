@@ -6,7 +6,8 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/Ronu010/Docker-two-tier-application.git'
+                git branch: 'main',
+                    url: 'https://github.com/Ronu010/Docker-two-tier-application.git'
             }
         }
 
